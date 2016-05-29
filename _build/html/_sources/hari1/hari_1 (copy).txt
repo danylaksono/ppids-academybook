@@ -1,17 +1,18 @@
-.. _git:
+.. _hari1:
 
-***********************
-Panduan Dasar Github
-***********************
+******************************
+Hari 1: Github Social Coding
+******************************
+
 
 .. raw:: html
 
-   <hr></br>
+   <hr>
 
 Tentang Git
 ==============
 
-**Git** merupakan sistem Source Code Management (SCM) dan Version Control
+**Git** merupakan sistem *Source Code Management* (SCM) dan *Version Control*
 yang bersifat bebas dan terbuka (*free and open source*). Git didesain
 untuk fleksibilitas manajemen kode dalam skala kecil hingga skala besar,
 sambil tetap menjaga kecepatan proses yang dibutuhkan.
@@ -31,6 +32,11 @@ Salah satu fungsi Github yang sangat menguntungkan dalam pembuatan halaman
 web adalah: Github dapat digunakan sebagai sebuah hosting gratis, dengan
 sebuah alamat domain yang juga gratis (``namapengguna.github.io``).
 
+Pelajaran pertama pada PPIDS-Academy ini adalah bagaimana menggunakan Github untuk
+membuat sebuah domain baru yang nantinya akan digunakan sepanjang pelatihan. Selain itu juga
+perlu disampaikan mengenai bagaimana berkolaborasi pada sebuah project open source melalui
+Github.
+
 
 Menggunakan Github
 ===================
@@ -44,45 +50,46 @@ Pada bagian ini anda akan mulai menggunakan Github untuk menyimpan kode project 
 1. Buat akun Github anda melalui alamat `<http://www.github.com>`_
 
 .. image:: ../_static/images/git_github-webpages.png
-   :align: center
-   :width: 500 pt
+  :align: center
+  :width: 500 pt
 
 2. Lakukan pengaturan yang diperlukan pada halaman `<https://github.com/settings/profile>`_
 
 3. Buat repository baru. Pastikan nama repository yang anda buat mengikuti format ``namapengguna.github.io``.  Apabila nama pengguna anda adalah **'ppids-ugm'** maka nama repository yang akan anda buat ini bernama ``ppids-ugm.github.io``.
 
-.. image:: ../_static/images/git_new-repo.png
-   :align: center
+.. image:: ../_static/images/git_new-repo.jpg
+  :align: center
+|
+4. Beri tanda centang pada **Initialize this repository with README**.
 
-Beri tanda centang pada **Initialize this repository with README**.
-   
-4. Sekarang, anda telah memiliki sebuah repository baru. Anda dapat mengisikan project anda pada repository ini. Sebagai langkah pertama, buat file baru (klik tanda ``+`` di samping nama repository anda), kemudian copykan kode berikut:
+5. Sekarang, anda telah memiliki sebuah repository baru. Anda dapat mengisikan project anda pada repository ini. Sebagai langkah pertama, buat file baru (klik tanda ``+`` di samping nama repository anda), kemudian copykan kode berikut:
 
 .. highlight:: html
 .. literalinclude:: ../_static/webpage/digitalclock.html
-   :linenos:
-   
+  :linenos:
+
 Simpan file baru tersebut dengan nama ``index.html`` dan lakukan *commit* pertama anda.
 
 Sampai di sini, anda telah membuat sebuah repository dan mengisikan sebuah
 file HTML pada repository tersebut. Latihan selanjutnya adalah bagaimana memodifikasi isi dari repository ini untuk menampung
 kode yang akan kita gunakan pada halaman web kita.
 
-.. note:: Tunggu beberapa menit (atau beberapa belas menit) dan Github akan menyajikan halaman web anda pada alamat ``http://<nama-username-anda>.github.io``.
+.. note:: Tunggu beberapa menit (atau beberapa belas menit) dan Github akan menyajikan halaman web anda pada alamat: ``http://<nama-username-anda>.github.io``.
 
 =======================
 Instalasi pada Windows
 =======================
 
-Panduan untuk instalasi Github pada Windows dapat anda temukan `di sini
-<http://www.geekgumbo.com/2010/04/09/installing-git-on-windows/>`_
+Untuk selanjutnya,anda akan sering menggunakan command prompt ketika berurusan dengan Github.
+Untuk memudahkan instalasi, unduh perangkat command prompt pengganti yang telah dilengkapi dengan Github
+bernama `CMDer<http://cmder.net/>`_ dan unduh versi **full** untuk dapat menggunakan seluruh fungsinya.
 
 Setelah melakukan instalasi, anda juga perlu mengatur SSH Key pada Git Bash
 dan pada Akun Github anda. Silahkan ikuti panduan `di alamat ini
 <http://guides.beanstalkapp.com/version-control/git-on-windows.html>`_.
 
-Untuk memeriksa instalasi, buka Git Bash dan ketikkan ``git --version``
-pada jendela command yang muncul.
+Untuk memeriksa instalasi, buka CMDer (atau Git Bash - tergantung versi mana yang anda sukai)
+kemudian ketikkan ``git --version`` pada jendela command yang muncul.
 
 
 Bekerja dengan Github
@@ -94,19 +101,19 @@ Melakukan kloning repository
 
 1. Pada halaman web repository anda, cari menu bertuliskan ``SSH Clone URL`` pada bagian kanan. Copykan teks pada kotak yang disediakan. Teks tersebut terlihat seperti ini::
 
-        git@github.com:ppids-ugm/ppids-ugm.github.io.git
+       git@github.com:ppids-ugm/ppids-ugm.github.io.git
 
-2. Buka ``Git Bash`` anda, kemudian ketikkan perintah::
+2. Buka ``CMDer`` anda, kemudian ketikkan perintah::
 
-        git clone git@github.com:ppids-ugm/ppids-ugm.github.io.git
-        
+       git clone git@github.com:ppids-ugm/ppids-ugm.github.io.git
+
 (sesuaikan dengan teks yang telah anda copy dari repository anda masing-masing. Ganti ``ppids-ugm`` di atas dengan  ``username-anda``)
 
 3. Cari folder ``username-anda.github,io`` pada Windows Explorer. Folder ini merupakan repository lokal, salinan dari repository yang ada pada web Github.
 
 4. Buatlah satu file baru pada folder tersebut. Simpan dengan nama ``latihan-git.txt`` dan isi dengan teks::
 
-        File ini ditambahkan dari repositori lokal
+       File ini ditambahkan dari repositori lokal
 
 .. danger:: Rangkaian perintah berikut sangat penting untuk anda ingat
 
@@ -129,17 +136,17 @@ Melakukan Fork repository
 2. Klik tombol ``Fork`` pada bagian kanan atas halaman
 
 .. image:: ../_static/images/git_fork.png
-   :align: center
+  :align: center
 
 3. Akan muncul repository baru pada halaman anda yang merupakan salinan dari repository ``github.danylaksono/latihan-webgis``.
 
 .. image:: ../_static/images/git_forked.png
-   :align: center
+  :align: center
 
 4. Lakukan ``Cloning`` dari repository anda ini sebagaimana pada langkah sebelumnya::
 
-        **git clone** git@github.com:ppids-ugm/latihan-webgis.git
-        
+       **git clone** git@github.com:ppids-ugm/latihan-webgis.git
+
 Anda akan memperoleh salinan lokal dari repository anda, yang juga merupakan salinan dari repository ``danylaksono/latihan-webgis``. Sampai di sini anda telah melakukan langkah awal dari penggunaan Github untuk project yang melibatkan beberapa orang sekaligus. Langkah selanjutnya dapat anda pelajari pada rujukan di bawah halaman ini.
 
 
@@ -151,7 +158,7 @@ bawah halaman ini dapat anda gunakan untuk mempelajari fungsi-fungsi lain dari
 Github, terutama apabila anda bekerja dalam sebuah project.
 
 .. image:: ../_static/images/git_fork-workflow.png
-   :align: center
+  :align: center
 
 
 .. _ref-git:
@@ -168,5 +175,4 @@ Rujukan
 
 .. raw:: latex
 
-   \pagebreak[4]
-
+  \pagebreak[4]

@@ -5,20 +5,24 @@
 
 
 *****************************
-Panduan Workshop WebGIS 2014
+ 	PPIDS Academy Tutorial Book
 *****************************
+
+-------------------------------------------------------
+*(Or how to be a geospatial web developer in 10 days)*
+-------------------------------------------------------
 
 .. raw:: html
 
    <hr></br>
 
 
-Dokumen ini didesain sebagai panduan untuk **"Workshop WebGIS"**
-oleh PPIDS-UGM dan Klub WebGIS Teknik Geodesi UGM yang diselenggarakan pada
-tanggal 29 November 2014.
+Buku (*online*) ini adalah panduan resmi untuk mahasiswa anggota PPIDS Academy yang diselenggarakan oleh Pusat Pengembangan 
+Infrastruktur Data Spasial (PPIDS) UGM Yogyakarta. Buku ini berperan sebagai panduan pada saat pelatihan maupun sebagai bahan 
+pembelajaran mandiri di luar pelatihan.
 
-Data untuk latihan `tersedia di sini <http://tinyurl.com/nhx4j52>`_. Modul ini akan terus diperbarui untuk menambahkan
-berbagai materi baru pada Workshop WebGIS selanjutnya
+
+	
 
 
 .. _konten-workshop:

@@ -9,7 +9,7 @@ Bekerja dengan Bootstrap
    <hr></br>
 
 
-Mengenal Bootstrap 
+Mengenal Bootstrap
 ==================
 
 **Bootstrap** merupakan front-end framework untuk HTML, JS dan CSS yang sangat
@@ -23,7 +23,7 @@ perlu membuat beberapa alamat yang berbeda agar website anda dapat dimuat pada
 sebuah perangkat mobile atau browser yang berbeda. Anda cukup membuat satu
 halaman, dan Bootstrap akan mengatur layout halaman web anda secara otomatis.
 
-Memanggil Bootstrap 
+Memanggil Bootstrap
 =====================
 
 Untuk pemula, Anda dapat menggunakan Bootstrap dengan dua cara yang mudah:
@@ -50,7 +50,7 @@ Setelah memanggil Bootstrap, anda dapat menggunakan komponen yang tersedia untuk
 .. note:: Ada dua versi Bootsrap yang dapat anda gunakan: Versi penuh dan versi `minified`. Versi mini memiliki lebih sedikit fungsi dan komponen dibandingkan versi penuh, namun umumnya sudah mencukupi untuk berbagai keperluan pembuatan halaman web anda.
 
 
-Berlatih dengan Bootstrap 
+Berlatih dengan Bootstrap
 =========================
 
 Kita akan menggunakan repository yang telah anda buat pada bab sebelumnya
@@ -58,10 +58,10 @@ Kita akan menggunakan repository yang telah anda buat pada bab sebelumnya
 
 1. Buat file baru dengan nama ``latihan-bootstrap.html``, kemudian copykan kode berikut:
   
-.. literalinclude:: ../_static/webpage/latihan-bootstrap.html
+.. literalinclude:: ../../_static/webpage/latihan-bootstrap.html
    :linenos:
 
-       
+
 2. Lakukan ``Git Push`` untuk menyimpan perubahan yang telah anda lakukan pada repository anda ini
 
 .. warning:: Sebagai peringatan, anda harus terlebih dahulu melakukan ``git pull``, ``git add --all`` dan ``git commit`` sebelum melakukan push. Jika tidak, Github akan gagal melacak file yang anda buat pada repository lokal anda tersebut.
@@ -74,7 +74,7 @@ Komponen Bootstrap
 
 Bootstrap menyediakan berbagai komponen yang dapat anda gunakan. Anda dapat bereksperimen sendiri dengan mengacu pada http://getbootstrap.com/components/.
 
-.. image :: ../_static/images/bootstrap_form.png
+.. image :: ../../_static/images/bootstrap_form.png
    :align: center
 
 Sebagai latihan, buatlah sebuah form registrasi yang meminta masukan nama dan alamat email dengan menggunakan Bootstrap seperti di atas.
@@ -94,5 +94,5 @@ Rujukan
 
 
 .. raw:: latex
-   
+
    \pagebreak[4]
