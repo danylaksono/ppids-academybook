@@ -4,22 +4,22 @@
    contain the root `toctree` directive.
 
 
-*****************************
-PPIDS Academy Tutorial Book
-*****************************
+*******************************
+ 	PPIDS Academy Tutorial Book
+*******************************
+
+-------------------------------------------------------
+*(Or how to be a geospatial web developer in 10 days)*
+-------------------------------------------------------
 
 .. raw:: html
 
    <hr></br>
 
 
-Dokumen ini didesain sebagai panduan untuk **"Workshop WebGIS"**
-oleh PPIDS-UGM dan Klub WebGIS Teknik Geodesi UGM yang diselenggarakan pada
-tanggal 29 November 2014.
-
-Data untuk latihan `tersedia di sini <http://tinyurl.com/nhx4j52>`_. Modul ini akan terus diperbarui untuk menambahkan
-berbagai materi baru pada Workshop WebGIS selanjutnya
-
+Buku (*online*) ini adalah panduan resmi untuk mahasiswa anggota PPIDS Academy yang diselenggarakan oleh Pusat Pengembangan
+Infrastruktur Data Spasial (PPIDS) UGM Yogyakarta. Buku ini berperan sebagai panduan pada saat pelatihan maupun sebagai bahan
+pembelajaran mandiri di luar pelatihan.
 
 .. _konten-workshop:
 
@@ -27,45 +27,12 @@ Daftar Materi
 ================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 4
 
-   git.rst
-   bootstrap.rst
-   leaflet.rst
+   hari_1.rst
+   hari_2.rst
    lisensi.rst
 
-.. _tentang-workshop:
-
-Tentang Workshop
-=================
-
-Workshop WebGIS ini merupakan kerjasama antara *Klub WebGIS Teknik Geodesi
-UGM* dengan *Pusat Pengembangan Infrastruktur Data Spasial (PPIDS)
-UGM*. Pelatihan ini muncul sebagai respon atas permintaan pelatihan mengenai
-WebGIS yang
-cukup besar kepada `Jurusan Teknik Geodesi UGM <http://geodesi.ugm.ac.id>`_
-serta `PPIDS-UGM <http://ppids.ft.ugm.ac.id>`_. Diharapkan, dengan adanya
-berbagai workshop serta pelatihan yang diadakan baik di lingkungan kampus
-Teknik Geodesi maupun di luar kampus akan memantik minat mahasiswa dan
-professional yang bekerja di bidang informasi geospasial untuk meningkatkan
-kapasitas dalam memenuhi permintaan pasar.
-
-Workshop ini merupakan bagian awal dari serangkaian pelatihan Web GIS yang akan
-diselenggarakan oleh PPIDS-UGM. Materi yang diberikan pada rangkaian ini
-berperan untuk melengkapi materi pada mata kuliah SIG berbasis Internet,
-juga untuk pelatihan mandiri, yang meliputi:
-
-* Teknologi Internet dan Web
-* Dasar-dasar WebGIS
-* Client-side dan Server-side scripting
-* Webmap APIs (OpenLayers, Gmap API, ArcGIS API dan Leaflet)
-* Cloud WebGIS (GISCloud, Mapbox dan TileMill, serta CartoDB)
-* Server Data Spasial (ArcGIS Server, Geoserver)
-* Manajemen Geoportal (Geonode dan OpenGeo Suite)
-* Pemetaan web tiga dimensi (Cessium, ThreeJS, X3DOM dan CityGML)
-* WebGIS dengan Android
-* WebGIS dengan MEAN Stack (MongoDB, ExpressJS, AngularJS dan NodeJS)
-* Cloud-hosting WebGIS
 
 .. _tentang-kami:
 
@@ -92,7 +59,93 @@ Beberapa kegiatan yang telah dilaksanakan oleh PPIDS-UGM antara lain:
 * Pelatihan perangkat lunak OpenSource untuk penanggulangan bencana Jawa Barat
 * Adaptasi seri ISO 19100 untuk Standar Nasional Indonesia (SNI) bidang
   geospasial
+* Evaluasi Kesiapan Penerapan IDS pada pemerintah daerah di Indonesia
+* Pengembangan Geoportal pada berbagai Kementrian/Lembaga/Pemda
 * dan lain-lain
+
+
+.. _tentang-academy:
+
+Tentang PPIDS-Academy
+=====================
+
+Untuk mengantisipasi tingginya permintaan pasar atas pengembangan infrastruktur data spasial
+baik dalam bentuk penyiapan SDM maupun pengembangan teknologi, pada tahun 2016 PPIDS-UGM
+membentuk PPIDS-Academy yang terdiri dari lebih-kurang 20 orang mahasiswa yang dilatih
+dan dipersiapkan secara khusus untuk membantu PPIDS dalam melaksanakan tugas yang dibebankan.
+
+Tujuan utama dari PPIDS-Academy adalah untuk mempersiapkan tenaga professional muda yang
+mampu bekerja di bidang informasi geospasial untuk meningkatkan kapasitas mahasiswa
+dalam memenuhi permintaan pasar yang kian tinggi. PPIDS-Academy berlangsung selama satu semester dengan
+jumlah pertemuan sekurang-kurangnya 10 kali. PPIDS memberikan sertifikat kelulusan bagi mahasiswa peserta
+PPIDS-Academy yang dapat menghadiri 80% dari total pertemuan yang diselenggarakan. Sebagai catatan, peserta
+PPIDS-Academy tidak dipungut biaya sama sekali.
+
+Beberapa materi pokok yang disampaikan pada **PPIDS-Academy** adalah sebagai berikut:
+
+* Teknologi Internet dan Web
+* Dasar-dasar WebGIS
+* Client-side dan Server-side scripting
+* Webmap APIs (OpenLayers, Gmap API, ArcGIS API dan Leaflet)
+* Cloud WebGIS (GISCloud, Mapbox dan TileMill, serta CartoDB)
+* Server Data Spasial (ArcGIS Server, Geoserver)
+* Manajemen Geoportal (Geonode dan OpenGeo Suite)
+* Pemetaan web tiga dimensi (Cessium, ThreeJS, X3DOM dan CityGML)
+* Location Based Service (LBS) dan WebGIS dengan Android
+* Fullstack WebGIS development (MongoDB, ExpressJS, AngularJS dan NodeJS)
+* Cloud-computing WebGIS
+
+
+.. _sistematika:
+
+Sistematika Penulisan Buku
+===========================
+
+
+Buku ini dibagi menjadi 10 bagian sesuai dengan jumlah pertemuan minimal yang diselenggarakan dalam
+PPIDS-Academy. Tiap bagian (satu hari pertemuan) membahas mengenai satu topik secara global dengan materi praktek yang
+dapat langsung diterapkan untuk memudahkan pemahaman. Kesepakatan mengenai notasi dan penulisan merujuk pada penulisan dokumen
+dengan ReST (*reStructuredText*). Sebagai contoh, ``tulisan seperti ini`` menunjukkan nama file, perintah atau tombol. Penulisan
+kode dilakukan seperti ini:
+
+.. highlight:: python
+
+.. code-block:: python
+   :caption: **hello-def.py**
+   :linenos:
+
+    def hello():
+        #Greetings!
+        return "Hello World"
+
+
+.. raw:: html
+
+        </br>
+
+.. highlight:: javascript
+
+atau seperti ini::
+
+      function hello(): {
+        return "Hello World";
+      }
+
+.. raw:: html
+
+      </br>
+
+Selain itu, beberapa tanda khusus seperti berikut diberikan untuk menandai hal-hal penting:
+
+.. note:: Bagian seperti ini menunjukkan catatan
+
+.. warning:: Bagian seperti ini adalah peringatan
+
+.. danger:: Bahaya! perhatikan dengan seksama
+
+
+Panduan ini mengasumsikan anda menggunakan Sistem Operasi berbasis Windows. Meskipun demikian
+materi utama dari panduan ini tetap dapat digunakan pada berbagai sistem operasi lain dengan sedikit penyesuaian.
 
 .. _masukan-saran:
 
@@ -107,7 +160,7 @@ di alamat email ``ppids@ugm.ac.id`` atau ``laksono.dany@gmail.ugm.ac.id``.
 
 Lisensi Dokumen
 =================
-Copyright (c) 2014 Pusat Pengembangan Infrastruktur Data Spasial UGM
+Copyright (c) 2016 Pusat Pengembangan Infrastruktur Data Spasial UGM
 
 Pembaca diijinkan untuk mengkopi, membagikan dan atau memodifikasi dokumen
 ini sesuai dengan persyaratan yang diijinkan oleh GNU Free Documentation
@@ -119,4 +172,3 @@ License, Versi 1.3 atau seterusnya. Lisensi lengkap dapat dilihat pada bagian
 .. raw:: latex
 
    \pagebreak[4]
-
